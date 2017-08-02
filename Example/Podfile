@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LZBDBHelper_Example' do
+  pod 'LZBDBHelper', :path => '../'
+
+  target 'LZBDBHelper_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
