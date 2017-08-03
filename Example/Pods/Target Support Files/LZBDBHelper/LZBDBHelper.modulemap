@@ -1,0 +1,6 @@
+framework module LZBDBHelper {
+  umbrella header "LZBDBHelper-umbrella.h"
+
+  export *
+  module * { export * }
+}

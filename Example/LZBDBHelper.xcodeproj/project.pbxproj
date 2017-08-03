@@ -24,6 +24,14 @@
 		698E5BEAAB5488269FF534BF /* Pods_LZBDBHelper_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B031BD136114195D437CBD6 /* Pods_LZBDBHelper_Tests.framework */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		C86009801F31B457003D8915 /* LZBTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C860097F1F31B457003D8915 /* LZBTestModel.m */; };
+		C860098A1F31B9DB003D8915 /* LZBSqliteBaseTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C86009891F31B9DB003D8915 /* LZBSqliteBaseTool.m */; };
+		C86009931F32C168003D8915 /* NSObject+LZBDBModelHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C86009921F32C168003D8915 /* NSObject+LZBDBModelHelper.m */; };
+		C86009961F32C3FE003D8915 /* LZBSqliteTableTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C86009951F32C3FE003D8915 /* LZBSqliteTableTool.m */; };
+		C86009991F32C681003D8915 /* LZBDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C86009981F32C681003D8915 /* LZBDBHelper.m */; };
+		C860099C1F32CAA5003D8915 /* LZBSqliteUntilTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = C860099B1F32CAA5003D8915 /* LZBSqliteUntilTypes.m */; };
+		C860099E1F32CC59003D8915 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C860099D1F32CC59003D8915 /* libsqlite3.tbd */; };
+		C86009A01F32CC9B003D8915 /* LZBDBHelperTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C860099F1F32CC9B003D8915 /* LZBDBHelperTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2F194DEBB65DB3D9891E790D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		2F194DEBB65DB3D9891E790D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3DBF7A48C2EC3DE6DD4BED69 /* Pods_LZBDBHelper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZBDBHelper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		469F01F171966E6EBD8973D1 /* Pods-LZBDBHelper_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZBDBHelper_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LZBDBHelper_Tests/Pods-LZBDBHelper_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4A95BBB1566CCC54E2676A5B /* Pods-LZBDBHelper_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZBDBHelper_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LZBDBHelper_Tests/Pods-LZBDBHelper_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -63,10 +71,26 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8A53001097DA349E2E6B1A3A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		8A53001097DA349E2E6B1A3A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		9B031BD136114195D437CBD6 /* Pods_LZBDBHelper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZBDBHelper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A648724FBECC0D8EAA906378 /* Pods-LZBDBHelper_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZBDBHelper_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-LZBDBHelper_Example/Pods-LZBDBHelper_Example.release.xcconfig"; sourceTree = "<group>"; };
-		EE9718DCF5AE749FFDEFAE3E /* LZBDBHelper.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LZBDBHelper.podspec; path = ../LZBDBHelper.podspec; sourceTree = "<group>"; };
+		C860097E1F31B457003D8915 /* LZBTestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBTestModel.h; sourceTree = "<group>"; };
+		C860097F1F31B457003D8915 /* LZBTestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBTestModel.m; sourceTree = "<group>"; };
+		C86009871F31B73F003D8915 /* LZBDBHelperMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZBDBHelperMacro.h; sourceTree = "<group>"; };
+		C86009881F31B9DB003D8915 /* LZBSqliteBaseTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBSqliteBaseTool.h; sourceTree = "<group>"; };
+		C86009891F31B9DB003D8915 /* LZBSqliteBaseTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBSqliteBaseTool.m; sourceTree = "<group>"; };
+		C86009911F32C168003D8915 /* NSObject+LZBDBModelHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LZBDBModelHelper.h"; sourceTree = "<group>"; };
+		C86009921F32C168003D8915 /* NSObject+LZBDBModelHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LZBDBModelHelper.m"; sourceTree = "<group>"; };
+		C86009941F32C3FE003D8915 /* LZBSqliteTableTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBSqliteTableTool.h; sourceTree = "<group>"; };
+		C86009951F32C3FE003D8915 /* LZBSqliteTableTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBSqliteTableTool.m; sourceTree = "<group>"; };
+		C86009971F32C681003D8915 /* LZBDBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBDBHelper.h; sourceTree = "<group>"; };
+		C86009981F32C681003D8915 /* LZBDBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBDBHelper.m; sourceTree = "<group>"; };
+		C860099A1F32CAA5003D8915 /* LZBSqliteUntilTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBSqliteUntilTypes.h; sourceTree = "<group>"; };
+		C860099B1F32CAA5003D8915 /* LZBSqliteUntilTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBSqliteUntilTypes.m; sourceTree = "<group>"; };
+		C860099D1F32CC59003D8915 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		C860099F1F32CC9B003D8915 /* LZBDBHelperTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBDBHelperTest.m; sourceTree = "<group>"; };
+		C86009A11F32F427003D8915 /* LZBDBModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZBDBModelProtocol.h; sourceTree = "<group>"; };
+		EE9718DCF5AE749FFDEFAE3E /* LZBDBHelper.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LZBDBHelper.podspec; path = ../LZBDBHelper.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C860099E1F32CC59003D8915 /* libsqlite3.tbd in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
@@ -119,6 +144,7 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C860099D1F32CC59003D8915 /* libsqlite3.tbd */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
@@ -132,8 +158,11 @@
 		6003F593195388D20070C39A /* Example for LZBDBHelper */ = {
 			isa = PBXGroup;
 			children = (
+				C860097A1F31AFA8003D8915 /* Class */,
 				6003F59C195388D20070C39A /* LZBAppDelegate.h */,
 				6003F59D195388D20070C39A /* LZBAppDelegate.m */,
+				C860097E1F31B457003D8915 /* LZBTestModel.h */,
+				C860097F1F31B457003D8915 /* LZBTestModel.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* LZBViewController.h */,
 				6003F5A6195388D20070C39A /* LZBViewController.m */,
@@ -160,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				6003F5BB195388D20070C39A /* Tests.m */,
+				C860099F1F32CC9B003D8915 /* LZBDBHelperTest.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 			);
 			path = Tests;
@@ -183,6 +213,25 @@
 				8A53001097DA349E2E6B1A3A /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		C860097A1F31AFA8003D8915 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				C86009971F32C681003D8915 /* LZBDBHelper.h */,
+				C86009981F32C681003D8915 /* LZBDBHelper.m */,
+				C86009911F32C168003D8915 /* NSObject+LZBDBModelHelper.h */,
+				C86009921F32C168003D8915 /* NSObject+LZBDBModelHelper.m */,
+				C86009941F32C3FE003D8915 /* LZBSqliteTableTool.h */,
+				C86009951F32C3FE003D8915 /* LZBSqliteTableTool.m */,
+				C86009881F31B9DB003D8915 /* LZBSqliteBaseTool.h */,
+				C86009891F31B9DB003D8915 /* LZBSqliteBaseTool.m */,
+				C860099A1F32CAA5003D8915 /* LZBSqliteUntilTypes.h */,
+				C860099B1F32CAA5003D8915 /* LZBSqliteUntilTypes.m */,
+				C86009871F31B73F003D8915 /* LZBDBHelperMacro.h */,
+				C86009A11F32F427003D8915 /* LZBDBModelProtocol.h */,
+			);
+			path = Class;
 			sourceTree = "<group>";
 		};
 		E754AC2C23B9FA0DC28441CA /* Pods */ = {
@@ -394,9 +443,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C86009931F32C168003D8915 /* NSObject+LZBDBModelHelper.m in Sources */,
+				C860099C1F32CAA5003D8915 /* LZBSqliteUntilTypes.m in Sources */,
 				6003F59E195388D20070C39A /* LZBAppDelegate.m in Sources */,
+				C86009991F32C681003D8915 /* LZBDBHelper.m in Sources */,
+				C86009801F31B457003D8915 /* LZBTestModel.m in Sources */,
 				6003F5A7195388D20070C39A /* LZBViewController.m in Sources */,
+				C860098A1F31B9DB003D8915 /* LZBSqliteBaseTool.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				C86009961F32C3FE003D8915 /* LZBSqliteTableTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +459,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C86009A01F32CC9B003D8915 /* LZBDBHelperTest.m in Sources */,
 				6003F5BC195388D20070C39A /* Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

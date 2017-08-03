@@ -1,0 +1,16 @@
+PODS:
+  - LZBDBHelper (0.1.0)
+
+DEPENDENCIES:
+  - LZBDBHelper (from `../`)
+
+EXTERNAL SOURCES:
+  LZBDBHelper:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LZBDBHelper: ceb991b6ee5154fcbe9ca5d19f0cca0ecc304250
+
+PODFILE CHECKSUM: 748b9b6f596ee7444146fb030d83fb0f7a702d85
+
+COCOAPODS: 1.2.1
